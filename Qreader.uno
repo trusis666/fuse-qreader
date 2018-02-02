@@ -129,7 +129,7 @@ public class QreaderImpl
 			[task setUivc:uivc];
 
 			dispatch_once(&onceToken, ^{
-					QRCodeReader *reader = [QRCodeReader readerWithMetadataObjectTypes:@[AVMetadataObjectTypeQRCode]];
+					QRCodeReader *reader = [QRCodeReader readerWithMetadataObjectTypes:@[AVMetadataObjectTypeEAN13Code]];
 					vc                   = [QRCodeReaderViewController readerWithCancelButtonTitle:@"Cancel" codeReader:reader];
 					vc.modalPresentationStyle = UIModalPresentationFormSheet;
 			});

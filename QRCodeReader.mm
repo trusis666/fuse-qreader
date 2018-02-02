@@ -210,7 +210,7 @@
 
     if (metadataObjectTypes == nil || metadataObjectTypes.count == 0) {
       // Check the QRCode metadata object type by default
-      metadataObjectTypes = @[AVMetadataObjectTypeQRCode];
+      metadataObjectTypes = @[AVMetadataObjectTypeEAN13Code];
     }
 
     for (NSString *metadataObjectType in metadataObjectTypes) {
